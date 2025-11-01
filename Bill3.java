@@ -6,6 +6,6 @@ public class Bill3 {
 		String name2 = args[1];
 		String name3 = args[2];
 		int money=Integer.parseInt(args[3]);	    // Replace this comment with the rest of your code   
-	System.out.println(name1+" "+ name2 + " "+ name3+ " pay:"+ (Double.parseDouble(args[3]) / 3));
+	System.out.println(name3+" "+ name2 + " "+ name1+ " pay:"+ (money/3)+1);
 	}
 }
