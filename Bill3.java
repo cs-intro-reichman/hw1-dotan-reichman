@@ -7,6 +7,6 @@ public class Bill3 {
 		String name3 = args[2];
 		int money=Integer.parseInt(args[3]);	    // Replace this comment with the rest of your code   
 		double finalAmount=Double.parseDouble(args[3])/3;
-		System.out.println(name3+", "+ name2 + " and "+ name1+ " pay:"+ Math.ceil(finalAmount));
+		System.out.println(name3+", "+ name2 + ", and "+ name1+ ": pay"+ Math.ceil(finalAmount)+ " Shekels.");
 	}
 }
