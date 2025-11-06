@@ -12,30 +12,37 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
- 		int realTime = hours -12; 
-		String modified = "0" + minutes; 
-
-		if (hours > 12 && minutes>10) {
-			if(minutes>10)
-		 		System.out.println(realTime + ":"  + minutes + " PM" );
-			else 
-			System.out.println(realTime + ":" +  modified + " PM" );	
-		}
-    
-		if (hours == 12 && minutes>10) {
- 			if(minutes>10)
-		 		System.out.println(realTime + ":"  + minutes + " PM" );
-			else 
-				System.out.println(realTime + ":" +  modified + " PM" );
+ 
+		if(hours > 12)	{
+			  if(minutes >=10)
+				  System.out.println(hours-12 + ":" + minutes+ " PM");
+			  else
+				  System.out.println(hours-12 + ":0" + minutes+ " PM");		
 		}
 
-
-		if (hours < 12 && minutes>10) {
-			if(minutes>10)
-		 		System.out.println(realTime + ":"  + minutes + " AM" );
-			else 
-				System.out.println(realTime + ":" +  modified + " AM" );
+		   if( 0 < hours && hours < 12){
+		    if(minutes >=10)
+			System.out.println(hours + ":" + minutes+ " AM");
+		   else 
+			System.out.println(hours + ":0" + minutes+ " AM");
 		}
+		   
+		   if(hours == 12)
+		   {
+		    if(minutes >=10)
+				System.out.println(hours + ":" + minutes+ " PM");
+			
+			else
+			System.out.println(hours + ":0" + minutes+ " PM");
+		   
 
+		}
+		   if(hours==0)
+		   {
+			if(minutes >=10)
+			System.out.println("0:" + minutes + " AM" );
+			else
+				System.out.println("0:0" + minutes + " AM" );
+		}
 	}
 }
