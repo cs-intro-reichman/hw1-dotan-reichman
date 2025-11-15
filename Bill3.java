@@ -10,3 +10,5 @@ public class Bill3 {
 		System.out.println("Dear "+ name3+", "+ name2 + ", and "+ name1+ ": pay " + Math.ceil(finalAmount)+ " Shekels each");
 	}
 }
+
+// Great variable names!
