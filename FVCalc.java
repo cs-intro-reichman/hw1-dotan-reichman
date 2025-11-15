@@ -13,3 +13,5 @@ public class FVCalc {
 
 	}
 }
+
+// Camel case - futurevalue -> futureValue 
