@@ -45,4 +45,9 @@ public class TimeFormat {
 				System.out.println("0:0" + minutes + " AM" );
 		}
 	}
+
 }
+
+// Great attention to edge cases!
+// Notice that the minutes logic is similar in all cases. 
+// So maybe we can seperate the minutes logic from the hour, and handle them one after the other :)
